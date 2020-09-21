@@ -1,0 +1,490 @@
+html {
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  background-image: url(assets/header.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  padding-bottom: 74px;
+}
+
+.header #navbar {
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 18px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header__nav--logo {
+  width: 50px;
+  height: 50px;
+  margin: 0.5% auto auto 2%;
+}
+
+.header__nav ul {
+  list-style-type: none;
+  float: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.header__nav li {
+  line-height: 40px;
+  margin-right: 50px;
+  padding-left: 10px;
+}
+
+.header__nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.header__nav li a:hover {
+  color: #EC407A;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__section {
+  padding-left: 60%;
+  text-align: center;
+}
+
+.header__section--h1 {
+  color: #EC407A;
+  font-size: 48px;
+  line-height: 1.58;
+}
+
+.header__section--p {
+  font-size: 24px;
+  line-height: 1.58;
+  text-align: center;
+  color: #414141;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header__section #top {
+  height: 20pxpx;
+  width: 20px;
+  position: relative;
+  bottom: 9px;
+  right: 6px;
+  opacity: 0.7;
+}
+
+.header__section #bot {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  opacity: 0.7;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header__section a {
+  font-family: Dancing Script;
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 15px;
+  -webkit-box-shadow: 0px 6px 18px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 18px 0 rgba(0, 0, 0, 0.25);
+  background-color: #582dc6;
+  display: block;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.header__section a:hover {
+  background-color: white;
+  color: #582dc6;
+}
+
+.about {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about__h1 {
+  color: #EC407A;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.about__p {
+  font-size: 20 px;
+}
+
+.about p::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #EC407A;
+  top: 99.5%;
+  right: 38%;
+}
+
+.about p::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #EC407A;
+  top: 99.5%;
+  right: 58%;
+}
+
+.about__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 2% 0.5%;
+}
+
+.about__container--left {
+  margin-top: 20px;
+  background-image: url(assets/about.png);
+  background-repeat: no-repeat;
+  background-size: 680px 510px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  top: 100%;
+}
+
+.about__container--left #khadija {
+  border-radius: 50%;
+  width: 200px;
+  height: 250px;
+  border: #FAD3E0 5px solid;
+  margin-right: 60px;
+  margin-top: 106px;
+}
+
+.about__container--right {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.about__container--right p {
+  width: 505px;
+  line-height: 1.5;
+  font-size: 25px;
+}
+
+.about__container--right ul {
+  list-style: none;
+}
+
+.about__container--right li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.about__container--right .fa {
+  font-size: 20px;
+}
+
+.about__container--right .but {
+  -webkit-box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+  background-color: #fbbb24;
+  font-family: Dancing Script;
+  font-size: 27px;
+  line-height: 3.86;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-left: 48px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.about__container--right .but:hover {
+  background-color: white;
+  color: #fbbb24;
+}
+
+.portfolio {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.portfolio__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+}
+
+.portfolio__card--left img {
+  width: 80%;
+  height: 85%;
+}
+
+.portfolio__card--right {
+  width: 50%;
+  height: 50%;
+  text-align: initial;
+  margin-top: 6%;
+  line-height: 1.5;
+}
+
+.portfolio__card--right h1 {
+  color: #EC407A;
+}
+
+.portfolio__card--right .projects {
+  text-decoration: none;
+}
+
+.portfolio__card--right .projects__github {
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio__card--right .projects__website {
+  display: block;
+  text-decoration: none;
+  border: #EC407A 2px solid;
+  width: 100px;
+  padding: 3px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: #EC407A;
+}
+
+.portfolio__h1 {
+  color: #EC407A;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.portfolio__p {
+  font-size: 20 px;
+}
+
+.portfolio p::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #EC407A;
+  top: 193%;
+  right: 38%;
+}
+
+.portfolio p::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #EC407A;
+  top: 193%;
+  right: 58%;
+}
+
+.contact {
+  background-image: url(assets/cont.png);
+  background-repeat: no-repeat;
+  background-size: 1570px 530px;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contact__left {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 10%;
+}
+
+.contact__left p {
+  font-size: 20px;
+  line-height: 1.4;
+  padding-bottom: 5%;
+}
+
+.contact__left h1 {
+  font-size: 35px;
+  padding-bottom: 5%;
+}
+
+.contact__left--icon .fa {
+  font-size: 20px;
+  padding-right: 10px;
+  line-height: 2;
+}
+
+.contact__left--icon a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact__right {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: center;
+  margin-right: 5%;
+  background-color: white;
+  width: 90%;
+}
+
+.contact__right h1 {
+  color: #EC407A;
+}
+
+.contact__right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__right form input[type=text],
+.contact__right form input[type=email],
+.contact__right form textarea {
+  text-align: center;
+  width: 80%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  margin-left: 6%;
+  border-bottom: 1.5px solid #858383;
+}
+
+.contact__right form textarea {
+  padding-bottom: 40px;
+}
+
+.contact__right form input[type=submit] {
+  margin-left: 6%;
+  margin-top: 10%;
+  text-align: center;
+  width: 86.5%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  background-color: #EC407A;
+  color: #fff;
+}
+
+.contact__right form #send:hover {
+  background-color: white;
+  color: #EC407A;
+  border: 1px #EC407A solid;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
