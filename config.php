@@ -1,15 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "";
-$ndb ="porfolio";
+session_start();
+$host = "localhost"; /* Host name */
+$user = "root"; /* User */
+$password = ""; /* Password */
+$dbname = "portfolio"; /* Database name */
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password,$ndb);
-
+$con = mysqli_connect($host, $user, $password,$dbname);
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if (!$con) {
+ die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
-?>

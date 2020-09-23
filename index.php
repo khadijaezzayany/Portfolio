@@ -6,23 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
     <title>portfolio khadija Ezzayany</title>
 </head>
 
 <body>
     <!--------------------------------Header------------------------------>
     <div class="header" id="header">
-        <div class="header__nav" id="navbar">
-            <img class="header__nav--logo" src="assets/logo.svg" alt="">
-            <ul>
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORFOLIO</a></li>
-                <li><a href="#contact">CONTACT</li>
-                <li><a href="login.php">LOGIN</a></li>
-            </ul>
-        </div>
+        <?php  include "navbar.php";  ?>
         <div class=" header__section">
             <h1 class="header__section--h1"> Hello <br> My name is <br> Khadija</h1>
 
